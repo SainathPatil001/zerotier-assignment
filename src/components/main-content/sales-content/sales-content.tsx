@@ -22,6 +22,7 @@ export default function SalesContent() {
     <div className="sales-content-container">
       {salesCard.map((sales) => (
         <SalesCard
+          key={sales.title}
           message={sales.message}
           title={sales.title}
           src={sales.src}

@@ -32,7 +32,11 @@ export default function ThirdContent() {
         Used by the world's most innovative teams
       </p>
       {authors.map((author) => (
-        <AuthorCard message={author.message} author={author.author} />
+        <AuthorCard
+          key={author.author}
+          message={author.message}
+          author={author.author}
+        />
       ))}
     </>
   );

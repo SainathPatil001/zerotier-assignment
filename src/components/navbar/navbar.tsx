@@ -36,7 +36,9 @@ export default function Navbar() {
       </div>
       <ul className={`nav-items-container ${toogle ? "" : "hidden"}`}>
         {navItems.map((item) => (
-          <li className="nav-item">{item.label}</li>
+          <li className="nav-item" key={item.label}>
+            {item.label}
+          </li>
         ))}
       </ul>
       <div className="nav-signup-button-container flex items-center">
