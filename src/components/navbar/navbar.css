@@ -58,13 +58,17 @@
   }
 
   .nav-items-container {
-    top: 150px;
+    top: 125px;
   }
 }
 
 @media screen and (min-width: 60em) {
   .nav-signup-button-container svg {
     display: none !important;
+  }
+
+  .nav-signup-button-container {
+    margin-top: 0;
   }
 
   .nav-items-container {

@@ -6,7 +6,7 @@ export default function HeadContent() {
     <section className="head-content-main-container">
       <h1 className="head-content-title">{en.headContentTitle}</h1>
       <div className="head-content-message">{en.headContentMessage}</div>
-      <div className="head-content-btn-container mt-6">
+      <div className="head-content-btn-container mt-12">
         <button className="btn">Get {en.companyNameCapitiliazed}</button>
         <button className="btn-secondary ml-4">{en.learnMore}</button>
       </div>

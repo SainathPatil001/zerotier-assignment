@@ -41,9 +41,11 @@ export default function Navbar() {
           </li>
         ))}
       </ul>
-      <div className="nav-signup-button-container flex items-center">
-        <button className="btn-secondary mr-1">{en.login}</button>
-        <button className="btn mr-5">{en.signUp}</button>
+      <div className="nav-signup-button-container flex items-center mt-2 justify-between w-100">
+        <div>
+          <button className="btn-secondary mr-1">{en.login}</button>
+          <button className="btn mr-5">{en.signUp}</button>
+        </div>
         {toogle ? (
           <CloseIcon onClick={() => setToogle((toogle) => !toogle)} />
         ) : (
