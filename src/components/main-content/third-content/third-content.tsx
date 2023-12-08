@@ -29,7 +29,7 @@ export default function ThirdContent() {
   return (
     <>
       <p className="third-content-title mt-10 mb-10">
-        Used by the world's most innovative teams
+        Used by the world&apos;s most innovative teams
       </p>
       {authors.map((author) => (
         <AuthorCard
