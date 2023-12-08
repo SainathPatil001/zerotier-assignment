@@ -1,0 +1,86 @@
+.nav-main-container {
+  margin-top: 1em;
+}
+
+.nav-logo-text {
+  color: var(--white);
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav-logo svg {
+  width: 32px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.nav-signup-button-container svg path {
+  color: var(--primary);
+}
+
+.nav-signup-button-container svg {
+  cursor: pointer;
+}
+
+.nav-items-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 85px;
+  bottom: 0;
+  color: var(--white);
+  font-size: clamp(20px, 4.5vw, 30px);
+  background-color: var(--secondary);
+  padding-top: 1em;
+}
+
+.nav-item {
+  padding-bottom: 1em;
+  padding-left: 1.5em;
+  user-select: none;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  color: var(--link-hover);
+}
+
+@media screen and (max-width: 25em) {
+  .nav-main-container {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .nav-signup-button {
+    margin: 1em 0;
+    padding: 0.2em 0.625em;
+  }
+
+  .nav-items-container {
+    top: 150px;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .nav-signup-button-container svg {
+    display: none !important;
+  }
+
+  .nav-items-container {
+    display: flex;
+    position: static;
+  }
+  .nav-item {
+    padding-bottom: 0;
+  }
+
+  .nav-signup-button {
+    margin-right: 0;
+  }
+
+  .nav-items-container {
+    font-size: 1.3rem;
+    padding-top: 0;
+  }
+}
